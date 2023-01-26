@@ -745,6 +745,7 @@ ol {
 	}
 }
 
+
 .name {
 	background-color: $mainRed;
 	position: absolute;
@@ -800,6 +801,7 @@ ol {
 	font-size: 1.2rem;
 	color: rgba($color: #fff, $alpha: .6);
 	transition: color .3s ease;
+	text-align: center;
 
 	&:hover {
 		color: #fff;
