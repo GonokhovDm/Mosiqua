@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Raleway:wght@700&display=swap"
+		rel="stylesheet">
+	<script src="https://kit.fontawesome.com/ff394def59.js" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Mosiqua - Music Band</title>
+</head>
+
+<body>
+
+	<div class="loader">
+		<div class="loader-inner">
+			<svg width="120" height="220" viewBox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
+				<circle class="spinner" cx="50" cy="50" r="21" fill="#13181d" stroke-width="2"></circle>
+		 </svg>
+		</div>
+	</div>
+	<div class="main">
+	<header>
+		<div class="slider">
+			<div class="header-bg-img"></div>
+			<div class="header-content">
+				<div class="row jc-center ai-center">
+					<div class="col-sm-12 text-center">
+						<h1>
+							Welcome to mousiqua
+						</h1>
+						<h5>
+							Music Band and Musician
+						</h5>
+						<div class="red-rec up"></div>
+						<div class="red-rec down"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav>
+			<div class="navbar">
+				<a href="#" class="nav-logo">mosiqua.</a>
+				<div class="right-part">
+					<div class="burger-mobile">
+						<span></span>
+					</div>
+					<div class="nav-body">
+						<ul class="nav-ul">
+							<li><a class="nav-link" onclick="onClickHideMenu()" href="#">home</a></li>
+							<li><a data-goto=".concert-block" class="nav-link" onclick="onClickHideMenu()" href="#">about</a>
+							</li>
+							<li><a data-goto=".discography" class="nav-link" onclick="onClickHideMenu()"
+									href="#">discography</a></li>
+							<li><a data-goto=".members" class="nav-link" onclick="onClickHideMenu()" href="#">band</a></li>
+							<li><a data-goto=".tours" class="nav-link" onclick="onClickHideMenu()" href="#">tours</a></li>
+							<li><a data-goto=".photo-grid" class="nav-link" onclick="onClickHideMenu()" href="#">gallery</a>
+							</li>
+							<li><a data-goto=".blog" class="nav-link" onclick="onClickHideMenu()" href="#">news</a></li>
+							<li><a data-goto=".contact" class="nav-link" onclick="onClickHideMenu()" href="#">contact</a></li>
+							<li class="helper-li">
+								<a href="#">
+									<span>
+										<i class="fa-solid fa-compact-disc fa-lg"></i>
+									</span>
+								</a>
+							</li>
+							<li class="helper-li">
+								<a href="#">
+									<span>
+										<i class="fa-solid fa-magnifying-glass fa-lg"></i>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+
+	<!-- block #1 -->
+	<div class="container">
+		<div class="album">
+			<h2 class="content-title">Latest album</h2>
+			<div class="row jc-center ai-center">
+				<div class="col-12">
+					<div class="album-info">
+						<span>Label</span>
+						<p>Limitless</p>
+					</div>
+					<div class="album-info">
+						<span>Released</span>
+						<p>March 23/03/18</p>
+					</div>
+					<div class="album-info">
+						<span>Genre</span>
+						<p>Pop / Rock / Techno</p>
+					</div>
+					<div class="album-info">
+						<span>Styles</span>
+						<p>Revival / Indie Rock</p>
+					</div>
+					<div class="block-social">
+						<ul>
+							<li>
+								<span>
+									<a href="#">
+										<i class="fa-brands fa-apple fa-xl"></i>
+									</a>
+								</span>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<i class="fa-solid fa-play fa-xl"></i>
+									</a>
+								</span>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<i class="fa-brands fa-amazon fa-xl"></i>
+									</a>
+								</span>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<i class="fa-brands fa-soundcloud fa-xl"></i>
+									</a>
+								</span>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<i class="fa-brands fa-spotify fa-xl"></i>
+									</a>
+								</span>
+							</li>
+							<li>
+								<span>
+									<a href="#">
+										<i class="fa-brands fa-youtube fa-xl"></i>
+									</a>
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row jc-center">
+				<div class="col-12 col-lg-8 col-md-10">
+					<div class="album-player">
+						<img src="source/images/space.jpg" alt="">
+						<ol>
+							<li>
+								<audio id="audio-1" src="source/sounds/1.mp3"></audio>
+								<div class="player-elem">
+									<div class="track-block">
+										<div class="track-info-icon">
+											<span><i class="playBtn fa-solid fa-play fa-l" id="play-btn-1"></i></span>
+											<div class="track-info">
+												<span>Love Alive</span>
+												<p>Limitless</p>
+											</div>
+										</div>
+										<ul class="buttons">
+											<li>
+												<button>
+													<span>
+														<i class="fa-solid fa-download fa-l"></i>
+													</span>
+													<span>DOWNLOAD</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<audio id="audio-2" src="source/sounds/2.mp3"></audio>
+								<div class="player-elem">
+									<div class="track-block">
+										<div class="track-info-icon">
+											<span><i class="playBtn fa-solid fa-play fa-l" id="play-btn-2"></i></span>
+											<div class="track-info">
+												<span>Hope</span>
+												<p>Limitless</p>
+											</div>
+										</div>
+										<ul class="buttons">
+											<li>
+												<button class="border-red">
+													<span>
+														<i class="fa-brands fa-itunes-note"></i>
+													</span>
+													<span>Lyrics</span>
+												</button>
+											</li>
+											<li>
+												<button>
+													<span>
+														<i class="fa-solid fa-cart-shopping"></i>
+													</span>
+													<span>Purchase</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<audio id="audio-3" src="source/sounds/3.mp3"></audio>
+								<div class="player-elem">
+									<div class="track-block">
+										<div class="track-info-icon">
+											<span><i class="playBtn fa-solid fa-play fa-l" id="play-btn-3"></i></span>
+											<div class="track-info">
+												<span>Bounce Out</span>
+												<p>Limitless</p>
+											</div>
+										</div>
+										<ul class="buttons">
+											<li>
+												<button>
+													<span>
+														<i class="fa-solid fa-download fa-l"></i>
+													</span>
+													<span>DOWNLOAD</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<audio id="audio-4" src="source/sounds/4.mp3"></audio>
+								<div class="player-elem">
+									<div class="track-block">
+										<div class="track-info-icon">
+											<span><i class="playBtn fa-solid fa-play fa-l" id="play-btn-4"></i></span>
+											<div class="track-info">
+												<span>Girls Are the Same</span>
+												<p>Limitless</p>
+											</div>
+										</div>
+										<ul class="buttons">
+											<li>
+												<button>
+													<span>
+														<i class="fa-solid fa-download fa-l"></i>
+													</span>
+													<span>DOWNLOAD</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<audio id="audio-5" src="source/sounds/5.mp3"></audio>
+								<div class="player-elem">
+									<div class="track-block">
+										<div class="track-info-icon">
+											<span><i class="playBtn fa-solid fa-play fa-l" id="play-btn-5"></i></span>
+											<div class="track-info">
+												<span>My Queen</span>
+												<p>Limitless</p>
+											</div>
+										</div>
+										<ul class="buttons">
+											<li>
+												<button class="border-red">
+													<span>
+														<i class="fa-brands fa-itunes-note"></i>
+													</span>
+													<span>Lyrics</span>
+												</button>
+											</li>
+											<li>
+												<button>
+													<span>
+														<i class="fa-solid fa-cart-shopping"></i>
+													</span>
+													<span>Purchase</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<audio id="audio-6" src="source/sounds/6.mp3"></audio>
+								<div class="player-elem">
+									<div class="track-block">
+										<div class="track-info-icon">
+											<span><i class="playBtn fa-solid fa-play fa-l" id="play-btn-6"></i></span>
+											<div class="track-info">
+												<span>Falling Apart</span>
+												<p>Limitless</p>
+											</div>
+										</div>
+										<ul class="buttons">
+											<li>
+												<button>
+													<span>
+														<i class="fa-solid fa-download fa-l"></i>
+													</span>
+													<span>DOWNLOAD</span>
+												</button>
+											</li>
+											<li>
+												<button>
+													<span>
+														<i class="fa-solid fa-cart-shopping"></i>
+													</span>
+													<span>Purchase</span>
+												</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- block #2 -->
+	<div class="concert-block">
+		<div class="concert-bg">
+			<!-- <img src="source/images/concert.jpg" alt=""> -->
+		</div>
+		<div class="container">
+			<div class="concert">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="concert-info">
+							<h2>A different <br> kind of music</h2>
+							<p>Melbourne is the coastal capital of the southeastern Australian state of Victoria. At the city's
+								centre is the modern Federation Square development, with plazas, bars, and restaurants by the
+								Yarra River. In the Southbank area, the Melbourne Arts Precinct is the site of Arts Centre
+								Melbourne and the National Gallery of Victoria, with Australian and indigenous art.</p>
+							<div class="block-social">
+								<ul>
+									<li>
+										<span>
+											<a href="#">
+												<i class="fa-brands fa-apple fa-xl"></i>
+											</a>
+										</span>
+									</li>
+									<li>
+										<span>
+											<a href="#">
+												<i class="fa-solid fa-play fa-xl"></i>
+											</a>
+										</span>
+									</li>
+									<li>
+										<span>
+											<a href="#">
+												<i class="fa-brands fa-amazon fa-xl"></i>
+											</a>
+										</span>
+									</li>
+									<li>
+										<span>
+											<a href="#">
+												<i class="fa-brands fa-soundcloud fa-xl"></i>
+											</a>
+										</span>
+									</li>
+									<li>
+										<span>
+											<a href="#">
+												<i class="fa-brands fa-spotify fa-xl"></i>
+											</a>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-7">
+						<div class="concert-place">
+							<div class="tour-info bg-red">
+								<span>Upcoming tour</span>
+								<p>Fort Mason Center <br> San Francisco, CA</p>
+							</div>
+							<div class="tour-info">
+								<span>Location</span>
+								<p>Sunday to Wednesday <br> Juli 23 to 26, 2023</p>
+							</div>
+							<div class="more-info">
+								<span>
+									<a href="#">
+										<i class="fa-solid fa-ticket"></i>
+										Buy a ticket
+									</a>
+								</span>
+							</div>		
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- block #3 -->
+	<div class="container">
+		<div class="discography">
+			<h2 class="content-title">Discography</h2>
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="discography-card">
+						<h6>Limitless</h6>
+						<a href="#" class="view-album">View Album</a>
+						<a href="#">
+							<img class="animated" src="source/images/1.jpg" alt="">
+						</a>
+						<div class="block-social">
+							<ul>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-apple fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-solid fa-play fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-amazon fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-soundcloud fa-xl"></i>
+										</a>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="discography-card">
+						<h6>Set me free</h6>
+						<a href="#" class="view-album">View Album</a>
+						<a href="#">
+							<img class="animated" src="source/images/2.jpg" alt="">
+						</a>
+						<div class="block-social">
+							<ul>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-apple fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-solid fa-play fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-amazon fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-soundcloud fa-xl"></i>
+										</a>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="discography-card">
+						<h6>How it feels</h6>
+						<a href="#" class="view-album">View Album</a>
+						<a href="#">
+							<img class="animated" src="source/images/3.jpg" alt="">
+						</a>
+						<div class="block-social">
+							<ul>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-apple fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-solid fa-play fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-amazon fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-soundcloud fa-xl"></i>
+										</a>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 col-lg-3">
+					<div class="discography-card">
+						<h6>Tonight</h6>
+						<a href="#" class="view-album">View Album</a>
+						<a href="#">
+							<img class="animated" src="source/images/4.jpg" alt="">
+						</a>
+						<div class="block-social">
+							<ul>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-apple fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-solid fa-play fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-amazon fa-xl"></i>
+										</a>
+									</span>
+								</li>
+								<li>
+									<span>
+										<a href="#">
+											<i class="fa-brands fa-soundcloud fa-xl"></i>
+										</a>
+									</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- block #4 -->
+	<div class="banner">
+		<div class="filter"></div>
+		<div class="container w80 gx-4">
+			<h2>Time left untill the upcoming tour</h2>
+			<p>27 to 31 July whith over 10 show - Cincinnati, Ohio</p>
+		</div>
+	</div>
+
+	<!-- block #5 -->
+	<div class="container">
+		<div class="members">
+			<h2 class="content-title">Band members</h2>
+			<div class="row">
+				<div class="col-md-4 col-lg-4">
+					<div class="member-card">
+						<img src="/source/images/member-2.jpg" alt="">
+						<div class="name">
+							<span>Joe Walker</span>
+							<p>Lead vocals, guitars</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="member-card">
+						<img src="/source/images/member-1.jpg" alt="">
+						<div class="name">
+							<span>Andrew Smith</span>
+							<p>Lead guitar, bass guitar</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-lg-4">
+					<div class="member-card">
+						<img src="/source/images/member-3.jpg" alt="">
+						<div class="name">
+							<span>Jeremy Anderton</span>
+							<p>Drums, keyboards</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- block #6 -->
+	<div class="container">
+		<div class="row jc-center">
+			<div class="col-12 col-lg-8 col-md-10">
+				<div class="tours">
+					<h2 class="content-title">Upconimg tours</h2>
+					<div class="radio-elem">
+						<ul>
+							<li>
+								<h5 class="radio-select active">American tour</h5>
+							</li>
+							<li>
+								<h5 class="radio-select">Europeen tour</h5>
+							</li>
+						</ul>
+					</div>
+					<!-- american region -->
+					<div class="region active">
+						<div class="video-block american">
+
+							<span class="video-play-btn">
+								<a href="#">
+									<i class="fa-solid fa-play fa-xl"></i>
+								</a>
+							</span>
+
+						</div>
+						<p class="video-descr">The American Tour 2021</p>
+						<div class="tour-list">
+							<ul>
+								<li>
+									<div class="row jc-center ai-center">
+										<div class="col-lg-3 col-md-3">
+											<span class="date">14 Mar</span>	
+										</div>
+										<div class="col-lg-4 col-md-4">
+											<div class="tour-list-text">
+												<div>
+													<p class="location">MELBOURNE, AU</p>
+													<p class="place">Rod Laver Arena</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-5 col-md-5">
+											<div class="tour-list-buttons">
+												<ul class="buttons">
+													<li>
+														<button class="border-red">
+															<span>
+																<i class="fa-solid fa-ticket"></i>
+															</span>
+															<span>VIP</span>
+														</button>
+													</li>
+													<li>
+														<button>
+															<span>
+																<i class="fa-solid fa-ticket"></i>
+															</span>
+															<span>Buy ticket</span>
+														</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row jc-center ai-center">
+										<div class="col-lg-3 col-md-3">
+											<span class="date">10 Apr</span>	
+										</div>
+										<div class="col-lg-4 col-md-4">
+											<div class="tour-list-text">
+												<div class="date">
+													<p class="location">WASHINGTON, DC, USA</p>
+													<p class="place">Capital One Arena</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-5 col-md-5">
+											<div class="tour-list-buttons">
+												<ul class="buttons">
+													<li>
+														<button>
+															<span>
+																<i class="fa-solid fa-ticket"></i>
+															</span>
+															<span>Buy ticket</span>
+														</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row jc-center ai-center">
+										<div class="col-lg-3 col-md-3">
+											<span class="date">24 May</span>	
+										</div>
+										<div class="col-lg-4 col-md-4">
+											<div class="tour-list-text">
+												<div class="date">
+													<p class="location">HOUSTON, TX, USA</p>
+													<p class="place">Arena Theatre</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-5 col-md-5">
+											<div class="tour-list-buttons">
+												<ul class="buttons">
+													<li>
+														<button class="border-red">
+															<span>
+																<i class="fa-solid fa-ticket"></i>
+															</span>
+															<span>VIP</span>
+														</button>
+													</li>
+													<li>
+														<button>
+															<span>
+																<i class="fa-solid fa-ticket"></i>
+															</span>
+															<span>Buy ticket</span>
+														</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="row jc-center ai-center">
+										<div class="col-lg-3 col-md-3">
+											<span class="date">31 Jun</span>	
+										</div>
+										<div class="col-lg-4 col-md-4">
+											<div class="tour-list-text">
+												<div class="date">
+													<p class="location">CHICAGO, IL, USA</p>
+													<p class="place">United Center</p>
+												</div>
+											</div>
+										</div>
+										<div class="col-12 col-lg-5 col-md-5">
+											<div class="tour-list-buttons">
+												<ul class="buttons">
+													<li>
+														<button>
+															<span>
+																<i class="fa-solid fa-ticket"></i>
+															</span>
+															<span>Buy ticket</span>
+														</button>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- end of american region -->
+
+				<!-- europeen region -->
+				<div class="region europeen">
+					<div class="video-block europeen">
+
+						<span class="video-play-btn">
+							<a href="#">
+								<i class="fa-solid fa-play fa-xl"></i>
+							</a>
+						</span>
+
+					</div>
+					<p class="video-descr">The Europeen Tour 2021</p>
+					<div class="tour-list">
+						<ul>
+							<li>
+								<div class="row jc-center ai-center">
+									<div class="col-lg-3 col-md-3">
+										<span class="date">24 Jul</span>	
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="tour-list-text">
+											<div>
+												<p class="location">STOCKHOLM, SWEDEN</p>
+												<p class="place">Annexet</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-5 col-md-5">
+										<div class="tour-list-buttons">
+											<ul class="buttons">
+												<li>
+													<button>
+														<span>
+															<i class="fa-solid fa-ticket"></i>
+														</span>
+														<span>Buy ticket</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row jc-center ai-center">
+									<div class="col-lg-3 col-md-3">
+										<span class="date">16 Aug</span>	
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="tour-list-text">
+											<div class="date">
+												<p class="location">BERLIN, GERMANY</p>
+												<p class="place">Mercedes-Benz Arena</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-5 col-md-5">
+										<div class="tour-list-buttons">
+											<ul class="buttons">
+												<li>
+													<button>
+														<span>
+															<i class="fa-solid fa-ticket"></i>
+														</span>
+														<span>Buy ticket</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row jc-center ai-center">
+									<div class="col-lg-3 col-md-3">
+										<span class="date">24 Sep</span>	
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="tour-list-text">
+											<div class="date">
+												<p class="location">MONTERREY, MEXICO</p>
+												<p class="place">Machaca</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-5 col-md-5">
+										<div class="tour-list-buttons">
+											<ul class="buttons">
+												<li>
+													<button class="border-red">
+														<span>
+															<i class="fa-solid fa-ticket"></i>
+														</span>
+														<span>VIP</span>
+													</button>
+												</li>
+												<li>
+													<button>
+														<span>
+															<i class="fa-solid fa-ticket"></i>
+														</span>
+														<span>Buy ticket</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row jc-center ai-center">
+									<div class="col-lg-3 col-md-3">
+										<span class="date">31 Oct</span>	
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<div class="tour-list-text">
+											<div class="date">
+												<p class="location">MOSCOW, RUSSIA</p>
+												<p class="place">Olimpiyskiy</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-lg-5 col-md-5">
+										<div class="tour-list-buttons">
+											<ul class="buttons">
+												<li>
+													<button class="border-red">
+														<span>
+															<i class="fa-solid fa-ticket"></i>
+														</span>
+														<span>VIP</span>
+													</button>
+												</li>
+												<li>
+													<button>
+														<span>
+															<i class="fa-solid fa-ticket"></i>
+														</span>
+														<span>Buy ticket</span>
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- end of europeen region -->
+
+				<div class="subscribe border-dashed">
+					<div class="subdcribe-body">
+						<span>SUBSCRIBE FOR FREE DOWNLOADS <br> AND BAND NEWS UPDATES</span>
+						<div class="subscribe-block">
+							<form action="" method="get">
+								<div class="form-content">
+									<div class="row gx-2 jc-center">
+										<div class="col-12 col-md-9 col-lg-8">
+											<input type="email" class="email-input" placeholder="Email Address..">
+											<p>* We don’t share your information with anyone.</p>
+										</div>
+										<div class="col-auto">
+											<button type="submit" class="subscribe-input">subscribe now</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- block #7 -->
+	<div class="banner banner-2">
+		<div class="filter"></div>
+		<div class="container">
+			<h2>PRE-SALE OF 'THE UPCOMING TOUR'</h2>
+			<ul>
+				<li>
+					<div class="pre-sale">
+						<span>PRE-SALE TOUR 1 :</span>
+						<p>2/07 - 2/09</p>
+					</div>
+				</li>
+				<li>
+					<div class="pre-sale">
+						<span>PRE-SALE TOUR 2 :</span>
+						<p>2/14 - 2/16</p>
+					</div>
+				</li>
+			</ul>
+			<p class="pre-sale-info">
+				All pre-sales begin 12am local and end 6pm local time.
+			</p>
+			<div class="more-info">
+				<a href="#">click for more info</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- block #8 -->
+	<div class="photo-grid">
+		<div class="container">
+			<div class="row jc-center ai-center">
+				<div class="col-12">
+					<div class="card-gallery">
+						<a href="source/images/gallery-1.jpg">
+							<img class="animated" src="source/images/gallery-1.jpg" alt="">
+						</a>
+						<a href="source/images/gallery-2.jpg">
+							<img class="animated" src="source/images/gallery-2.jpg" alt="">
+						</a>
+						<a href="source/images/gallery-3.jpg">
+							<img class="animated" src="source/images/gallery-3.jpg" alt="">
+						</a>
+						<a href="source/images/gallery-4.jpg">
+							<img class="animated" src="source/images/gallery-4.jpg" alt="">
+						</a>
+						<a href="source/images/gallery-5.jpg">
+							<img class="animated" src="source/images/gallery-5.jpg" alt="">
+						</a>
+						<a href="source/images/gallery-6.jpg">
+							<img class="animated" src="source/images/gallery-6.jpg" alt="">
+						</a>
+						<a href="source/images/gallery-7.jpg">
+							<img class="animated" src="source/images/gallery-7.jpg" alt="">
+						</a>
+						<a href="source/images/gallery-8.jpg">
+							<img class="animated" src="source/images/gallery-8.jpg" alt="">
+						</a>
+						<a href="source/images/gallery-9.jpg">
+							<img class="animated" src="source/images/gallery-9.jpg" alt="">
+						</a>
+					</div>
+					<span class="simple-btn">
+						<a href="#">
+							<i class="fa-brands fa-instagram"></i>
+							Follow us @mousiqua
+						</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- block #9 -->
+	<div class="container">
+		<div class="blog">
+			<h2 class="content-title">On the blog</h2>
+			<ul class="news-list">
+				<li class="row jc-space-around ai-center">
+					<div class="col-12 col-md-6 order-md-2">
+						<div class="block-content">
+							<a href="#">
+								<img class="animated" src="source/images/banner-2.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-5 order-md-1">
+						<div class="block-content text-left">
+							<span>Nov 24, 2022</span>
+							<h2>New Single “Por Favor” feat. Fifth Harmony Out Now!</h2>
+							<p>
+								Melbourne is the coastal capital of the southeastern Australian state of Victoria. At the city's
+								centre is the modern Federation Square development, with plazas, bars, and restaurants by the
+								Yarra River.
+							</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+				</li>
+
+				<li class="row jc-space-around ai-center">
+					<div class="col-12 col-md-6 order-md-1">
+						<div class="block-content">
+							<a href="#">
+								<img class="animated" src="source/images/gallery-1.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-5 order-md-2">
+						<div class="block-content text-left">
+							<span>Nov 18, 2022</span>
+							<h2>Watch The Official Video for “Options” ft. Stephen Marley</h2>
+							<p>
+								Melbourne is the coastal capital of the southeastern Australian state of Victoria. At the city's
+								centre is the modern Federation Square development, with plazas, bars, and restaurants by the
+								Yarra River.
+							</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<span class="simple-btn">
+				<a href="#">View all blog posts</a>
+			</span>
+		</div>
+	</div>
+
+	<!-- block #10 -->
+	<div class="container">
+		<div class="contact">
+			<h2 class="content-title">Stay in touch</h2>
+			<div class="row jc-center ai-center">
+				<div class="col-12 col-lg-10">
+					<ul class="feature-list row">
+						<li class="col-md-6 col-lg-4">
+							<div class="card-body">
+								<h2>Booking</h2>
+								<span>Benaissa Ghrib</span>
+								<p>
+									T+(513)352-3209 <br> booking@mousiqua.net
+								</p>
+							</div>
+						</li>
+						<li class="col-md-6 col-lg-4">
+							<div class="card-body">
+								<h2>Press</h2>
+								<span>Evan McLoy</span>
+								<p>
+									T+(513)352-3209 <br> press@mousiqua.net
+								</p>
+							</div>
+						</li>
+						<li class="col-md-6 col-lg-4">
+							<div class="card-body">
+								<h2>Programming</h2>
+								<span>Gonokhov Dmitry</span>
+								<p>
+									T+(906)909-1221 <br> gonokhov.dm@gmail.com
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<ul class="block-social">
+						<li>
+							<a href="https://github.com/GonokhovDm">
+								<span>
+									<i class="fa-brands fa-github"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://vk.com/gonokhov_d">
+								<span>
+									<i class="fa-brands fa-vk"></i>
+								</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/gonokhov_d">
+								<span>
+									<i class="fa-brands fa-instagram"></i>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<script src="script.js"></script>
+</body>
+
+</html>
